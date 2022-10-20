@@ -1,0 +1,260 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding-top: 0px;
+	font-family:"Consolas", "Andale Mono", "Lucida Console","monospace";
+}
+
+html{
+	scroll-behavior:smooth;
+}
+
+body{
+	max-width: 1920px;
+	color:rgba(255,255,255,1.00);
+	background-color:rgba(255,104,202,1.00);
+	background-image:url("img/fondo_tramado.jpg");
+}
+
+/*----------------------HEADER------------------------*/
+
+header{
+	padding:40px 0px 30px 0px;
+	margin: 0px;
+	background-color:rgba(104,255,131,1.00);
+	height:90px; 
+}
+
+#cabecera{
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.bienvenidos, header p{
+	font-size: 20px;
+	color:rgba(255,104,202,1.00);
+	text-align: center;
+	display:flex;
+	flex-direction: column;
+}
+
+.botonera{
+	width: 100%;
+	padding: 15px 0px 15px 0px;
+	background-color:rgba(255,255,255,1.00);
+	justify-content: center;
+	display:flex;
+}
+nav ul{
+	list-style:none;
+	text-align:center;
+}
+nav ul li {
+	display: inline;
+	color:rgba(0,0,0,1.00);
+	padding: 10px 10px;
+	font-style:oblique;
+	font-size:10px;
+	font-weight:200px;
+}
+.botonera a{
+	font-size:20px;
+}
+.botonera a:hover{
+	transition: 0.5s;
+	color: white;
+	background-color:aqua;
+}
+
+/*----------------------MAIN------------------------*/
+.primer_caja img {
+	border-radius: 10px;
+	margin-right: 100px;
+}
+
+.primer_caja {
+	margin: 20px;
+	display: flex;
+	flex-direction:row;
+	align-content: flex-start;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 60px;
+	border-radius: 3em;
+	background-color:rgba(39,39,39,1.00);
+}
+
+h2{
+	font-size:40px;
+	text-decoration:underline;
+	color:rgba(228,0,127,1.00);
+	text-align: left;
+	font-weight: 400px;
+	text-transform: uppercase;
+	line-height: 20px;
+	margin:  20px 0px 30px 0px;
+}
+
+.bold{
+	color:rgba(228,0,127,1.00);
+	font-weight: 300px;
+}
+
+.primer_caja ul{
+	list-style: none;
+	font-size: 18px;
+	color:rgba(255,255,255,1.00);
+	font-weight: 100px;
+	line-height: 20px;
+}
+
+h3{
+	font-size: 20px;
+	color:rgba(255,255,255,1.00);
+	text-align: left;
+	font-weight: 300px;
+	text-transform: uppercase;
+	line-height: 60px;
+	margin-left: 10px;
+}
+.primer_caja p{
+	width: 400px;
+}
+
+.datos_personales {
+	border: solid;
+	border-color: black;
+	border-width: 3px;
+	border-radius: 25px;
+	padding: 30px 30px 52px 30px;
+	margin: 40px 10px 40px 50px;
+	max-width: 60%;
+}
+
+.sobre_mi {
+	border: solid;
+	border-color: black;
+	border-width: 3px;
+	border-radius: 25px;
+	padding: 30px;
+	margin: 40px 10px 0px 50px;
+	max-width: 600px;
+}
+.segunda_caja{
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-start;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+}
+
+.experiencia{
+	border:dashed;
+	border-color: white;
+	border-width: 3px;
+	border-radius: 25px;
+	padding: 20px 30px 52px 20px;
+	margin: 40px 10px 40px 50px;
+	max-width: 60%;
+}
+.habilidades {
+	border:dashed;
+	border-color: white;
+	border-width: 3px;
+	border-radius: 25px;
+	padding: 30px;
+	margin: 40px 10px 0px 30px;
+	max-width: 600px;
+}
+.bold_black{
+	font-weight: 600px;
+	font-size: 20px;
+}
+
+.tercer_caja{
+	font-size:40px;
+	color: white;
+	text-align:center;
+	line-height: 20px;
+	margin: 50px 0px 10px 0px;
+}
+.redes img{
+	padding: 20px 10px 20px 10px;
+}
+
+/*----------------------FOOTER------------------------*/
+
+.footer{
+padding: 10px;
+color:black;
+text-align: center;
+font-size: 13px;
+background-color:rgba(104,255,131,1.00);	
+}
+
+@media screen and (max-width:600px) {
+	header{
+		background-size: 100% auto;
+		height: 180px;
+		font-size: 0.70em;
+		padding:20px 0px 15px 0px;
+	}
+	.botonera{
+		padding: 7.5px 0px 7.5px 0px;
+		font-size: 0.80em;
+	}
+	.botonera ul{
+		padding: 5px 5px;
+		flex-direction: column;
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+	}
+	.cabecera {
+		background-size: 100% auto;
+		height: 700px;
+	}
+	
+	body{
+		font-size: 0.80em;
+	}	
+	.primer_caja img {
+		border-radius:20px;
+		padding: 10px;
+		margin: auto;
+		justify-content: center;
+		align-items: center;
+	}
+	.primer_caja{
+		flex-direction: column;
+		padding:30px; 
+		display: flex;
+		margin: 0px;
+		font-size:1em;
+		width: 70%;
+		justify-content: center;
+	}
+	
+	.segunda_caja{
+		flex-direction: column;
+		display: flex;
+		margin: 0px;
+		width: 100%;
+		justify-content: center;
+	}
+	h2,h3 {
+		font-size:2em;
+	}
+	.tercer_caja{
+		width: 100%;
+		flex-direction: column;
+		display: flex;
+		}
+		
+	.footer {
+		padding-top: 20px;
+	}
+}
