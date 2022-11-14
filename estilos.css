@@ -1,73 +1,74 @@
 @charset "utf-8";
 /* CSS Document */
+/*font-family: 'Montserrat', "sans-serif" ,"Consolas" */
+
 *{
-	margin:0px;
-	padding-top: 0px;
-	font-family:"Consolas", "Andale Mono", "Lucida Console","monospace";
+	margin: 0px;
+	padding: 0px;
+	color: #EAEAEA;
+	text-decoration: none;
 }
 
 html{
-	scroll-behavior:smooth;
-}
-
-body{
-	max-width: 1920px;
-	color:rgba(255,255,255,1.00);
-	background-color:rgba(255,104,202,1.00);
+	scroll-behavior: smooth;
 	background-image:url("img/fondo_tramado.jpg");
 }
-
-/*----------------------HEADER------------------------*/
-
-header{
-	padding:40px 0px 30px 0px;
+main{
 	margin: 0px;
-	background-color:rgba(104,255,131,1.00);
-	height:90px; 
 }
-
-#cabecera{
+	
+body{
+	width: 100%;
 	display: flex;
-	flex-direction:column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
-.bienvenidos, header p{
-	font-size: 20px;
-	color:rgba(255,104,202,1.00);
-	text-align: center;
-	display:flex;
 	flex-direction: column;
 }
-
-.botonera{
+/*----------------------HEADER------------------------*/
+header{
 	width: 100%;
-	padding: 15px 0px 15px 0px;
-	background-color:rgba(255,255,255,1.00);
-	justify-content: center;
-	display:flex;
+    height: 90px;
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+    align-items: center;
+	background-color:rgba(104,255,131,1.00);
 }
-nav ul{
-	list-style:none;
-	text-align:center;
+header a{
+	margin-left: 50px;
+	padding: 0
 }
-nav ul li {
-	display: inline;
-	color:rgba(0,0,0,1.00);
-	padding: 10px 10px;
-	font-style:oblique;
-	font-size:10px;
-	font-weight:200px;
+
+
+#botonera ul {
+    width: 500px;
+    margin-right: 50px;
+	display: flex;
+    justify-content: space-around;
 }
-.botonera a{
-	font-size:20px;
+
+#botonera ul li {
+    display: inline;
+    font-family:'Consolas';
+	font-weight: 400;
+    font-size: 18px;
+	background-color:rgba(255,104,202,1.00);
 }
-.botonera a:hover{
-	transition: 0.5s;
-	color: white;
-	background-color:aqua;
+
+#botonera a {
+    color: rgba(104,255,131,1.00);
+    padding: 5px;
+	
 }
+
+#botonera a:hover {
+    color: #EAEAEA;
+	font-size: 20px;
+}
+
+
+#logo {
+    margin: 0 0 0 100px;
+}
+
 
 /*----------------------MAIN------------------------*/
 .primer_caja img {
