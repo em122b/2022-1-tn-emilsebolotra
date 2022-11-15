@@ -11,7 +11,6 @@
 
 html{
 	scroll-behavior: smooth;
-	background-image:url("img/fondo_tramado.jpg");
 }
 main{
 	margin: 0px;
@@ -20,242 +19,230 @@ main{
 body{
 	width: 100%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: column;	
 }
+
 /*----------------------HEADER------------------------*/
-header{
-	width: 100%;
-    height: 90px;
-	display: flex;
-	flex-direction:row;
-	justify-content: space-between;
+
+header {
+    width: 100%;
+    height: 95px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-	background-color:rgba(104,255,131,1.00);
+    border-bottom: solid 5px #f52d32;
 }
-header a{
+header a {
+    margin-left: 50px;
+}
+#botonera ul {
+    width: 500px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+#botonera ul li {
+    display: inline;
+    
+}
+#botonera a {
+    color: #f52d32;
+    font-family: "coolvetica";
+    font-weight: 400;
+    font-size: 18px;
+}
+#botonera a:hover{
+	font-size: 22px;
+	color: yellowgreen;
+}
+
+.home {
+    width: 100%;
+    height: 580px;
+    color: #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.bienvenida {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.hola {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.hola p {
+    font-family: "coolvetica";
+    font-size: 40px;
+    color: black;
+}
+#quiensoy {
+    width: 100%;
+    height: 600px;
+    margin: 80px 0 80px 0;
+    background-color: #b57cf0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.yo {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.articulo1 {
+    width: 40%;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: monserrat;
+}
+
+.titulo1 {
+    color: white; 
+    font-size: 25px;
+    padding: 0 0 10px 0;
+}
+.articulo1 p {
+    font-size: 17px;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    padding: 0px 50px 0px 50px;
+    background-color:#f63c13;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*---------------------- habilidades------------------------*/
+
+
+.flex-container {
+	margin: 0 0 60px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    width: auto;
+}
+		
+.flex-item {
+	width: 1200px;
+	height: auto;
+    display: flex;
+    flex-flow: wrap;
+    align-content: center;
+}
+		
+.cardslocas {
+	border-radius: 20px;
+	margin: 1.5em;	
+	transform: scale(1.0);
+	transition-property: transform;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+	filter: drop-shadow(0 0 5px #333333);
+}
+	
+.cardslocas:hover {
+    transform: scale(1.15);
+	box-shadow: 0 0 5px #47CFE2, 0 0 20px #47CFE2, 0 0 40px #47CFE2;	
+}
+
+
+.cardinfo {
+	position: absolute;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-family: 'Poppins', sans-serif;
+	bottom: 2.5em;
+	left: 2em;
+	font-weight: 400
+}
+
+
+.subtitulo {
+    margin: 70px 0 50px 150px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 25px;
+	color: #524DCF;
+}
+
+#test {
+    width: auto;
+    height: 750px;
+    margin: 30px 0 0 0;
+    background-color:#b57cf0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#pantalla1 {
+    width: 800px;
+    height: 600px;
+    margin: 0px 0 0px 20px;
+    background: no-repeat; 
+    border: white solid;
+    border-radius: 30px;
+    background-image: url("img/foto2.jpg");
+	animation-name: fotos;
+	animation-duration: 27s;
+	animation-iteration-count:infinite;
+	animation-delay: 1s;
+}
+
+@keyframes fotos {
+	20% {background-image:  url("img/foto3.jpg")}
+	40% {background-image:  url("img/foto 4.jpg")}
+	60% {background-image:  url("img/foto7.jpg")}
+	80% {background-image:  url("img/foto8.jpg")}
+	100% {background-image:  url("img/foto11.jpg")}
+	
+}
+
+
+
+/*----------------------FOOTER------------------------*/
+footer{
+padding: 10px;
+color:black;
+background-color:#f63c13;
+
+}
+#redes-sociales{
 	margin-left: 50px;
 	padding: 0
 }
 
-
-#botonera ul {
-    width: 500px;
-    margin-right: 50px;
-	display: flex;
-    justify-content: space-around;
-}
-
-#botonera ul li {
-    display: inline;
-    font-family:'Consolas';
-	font-weight: 400;
-    font-size: 18px;
-	background-color:rgba(255,104,202,1.00);
-}
-
-#botonera a {
-    color: rgba(104,255,131,1.00);
-    padding: 5px;
-	
-}
-
-#botonera a:hover {
-    color: #EAEAEA;
-	font-size: 20px;
-}
-
-
-#logo {
-    margin: 0 0 0 100px;
-}
-
-
-/*----------------------MAIN------------------------*/
-.primer_caja img {
-	border-radius: 10px;
-	margin-right: 100px;
-}
-
-.primer_caja {
-	margin: 20px;
-	display: flex;
-	flex-direction:row;
-	align-content: flex-start;
-	justify-content: flex-start;
-	align-items: center;
-	padding: 60px;
-	border-radius: 3em;
-	background-color:rgba(39,39,39,1.00);
-}
-
-h2{
-	font-size:40px;
-	text-decoration:underline;
-	color:rgba(228,0,127,1.00);
-	text-align: left;
-	font-weight: 400px;
-	text-transform: uppercase;
-	line-height: 20px;
-	margin:  20px 0px 30px 0px;
-}
-
-.bold{
-	color:rgba(228,0,127,1.00);
-	font-weight: 300px;
-}
-
-.primer_caja ul{
-	list-style: none;
-	font-size: 18px;
-	color:rgba(255,255,255,1.00);
-	font-weight: 100px;
-	line-height: 20px;
-}
-
-h3{
-	font-size: 20px;
-	color:rgba(255,255,255,1.00);
-	text-align: left;
-	font-weight: 300px;
-	text-transform: uppercase;
-	line-height: 60px;
-	margin-left: 10px;
-}
-.primer_caja p{
-	width: 400px;
-}
-
-.datos_personales {
-	border: solid;
-	border-color: black;
-	border-width: 3px;
-	border-radius: 25px;
-	padding: 30px 30px 52px 30px;
-	margin: 40px 10px 40px 50px;
-	max-width: 60%;
-}
-
-.sobre_mi {
-	border: solid;
-	border-color: black;
-	border-width: 3px;
-	border-radius: 25px;
-	padding: 30px;
-	margin: 40px 10px 0px 50px;
-	max-width: 600px;
-}
-.segunda_caja{
-	display: flex;
-	justify-content: flex-start;
-	align-content: flex-start;
-	flex-wrap: nowrap;
-	align-items: flex-start;
-}
-
-.experiencia{
-	border:dashed;
-	border-color: white;
-	border-width: 3px;
-	border-radius: 25px;
-	padding: 20px 30px 52px 20px;
-	margin: 40px 10px 40px 50px;
-	max-width: 60%;
-}
-.habilidades {
-	border:dashed;
-	border-color: white;
-	border-width: 3px;
-	border-radius: 25px;
-	padding: 30px;
-	margin: 40px 10px 0px 30px;
-	max-width: 600px;
-}
-.bold_black{
-	font-weight: 600px;
-	font-size: 20px;
-}
-
-.tercer_caja{
-	font-size:40px;
-	color: white;
-	text-align:center;
-	line-height: 20px;
-	margin: 50px 0px 10px 0px;
-}
-.redes img{
+.redes{
 	padding: 20px 10px 20px 10px;
 }
 
-/*----------------------FOOTER------------------------*/
-
-.footer{
-padding: 10px;
-color:black;
-text-align: center;
-font-size: 13px;
-background-color:rgba(104,255,131,1.00);	
+.redes:hover{
+	color: #8eed69;
 }
 
-@media screen and (max-width:600px) {
-	header{
-		background-size: 100% auto;
-		height: 180px;
-		font-size: 0.70em;
-		padding:20px 0px 15px 0px;
-	}
-	.botonera{
-		padding: 7.5px 0px 7.5px 0px;
-		font-size: 0.80em;
-	}
-	.botonera ul{
-		padding: 5px 5px;
-		flex-direction: column;
-		display: flex;
-		justify-content: space-between;
-		text-align: center;
-	}
-	.cabecera {
-		background-size: 100% auto;
-		height: 700px;
-	}
-	
-	body{
-		font-size: 0.80em;
-	}	
-	.primer_caja img {
-		border-radius:20px;
-		padding: 10px;
-		margin: auto;
-		justify-content: center;
-		align-items: center;
-	}
-	.primer_caja{
-		flex-direction: column;
-		padding:30px; 
-		display: flex;
-		margin: 0px;
-		font-size:1em;
-		width: 70%;
-		justify-content: center;
-	}
-	
-	.segunda_caja{
-		flex-direction: column;
-		display: flex;
-		margin: 0px;
-		width: 100%;
-		justify-content: center;
-	}
-	h2,h3 {
-		font-size:2em;
-	}
-	.tercer_caja{
-		width: 100%;
-		flex-direction: column;
-		display: flex;
-		}
-		
-	.footer {
-		padding-top: 20px;
-	}
+.copyright{
+	width: 500px;
+	display: flex;
+	flex-direction: row;
+	font-size: 13px;
+	font-family: "coolvetica";
 }
