@@ -149,7 +149,7 @@ footer {
     align-content: center;
 }
 		
-.cardslocas {
+.habilidades {
 	border-radius: 20px;
 	margin: 1.5em;	
 	transform: scale(1.0);
@@ -159,7 +159,7 @@ footer {
 	filter: drop-shadow(0 0 5px #333333);
 }
 	
-.cardslocas:hover {
+.habilidades:hover {
     transform: scale(1.15);
 	box-shadow: 0 0 5px #47CFE2, 0 0 20px #47CFE2, 0 0 40px #47CFE2;	
 }
@@ -178,9 +178,9 @@ footer {
 
 .subtitulo {
     margin: 70px 0 50px 150px;
-	font-family: 'Poppins', sans-serif;
+	font-family: "coolvetica";
 	font-size: 25px;
-	color: #524DCF;
+	color: black;
 }
 
 #test {
@@ -202,19 +202,18 @@ footer {
     border: white solid;
     border-radius: 30px;
     background-image: url("img/foto2.jpg");
-	animation-name: fotos;
+	animation-name: galeria;
 	animation-duration: 27s;
 	animation-iteration-count:infinite;
 	animation-delay: 1s;
 }
 
-@keyframes fotos {
-	20% {background-image:  url("img/foto3.jpg")}
-	40% {background-image:  url("img/foto 4.jpg")}
-	60% {background-image:  url("img/foto7.jpg")}
-	80% {background-image:  url("img/foto8.jpg")}
-	100% {background-image:  url("img/foto11.jpg")}
-	
+@keyframes galeria:
+	20% {background-image:  url("img/proyectoa1.jpg")
+	40% {background-image:  url("img/proyectoa2.png")
+	60% {background-image:  url("img/proyectoa3.jpg")
+	80% {background-image:  url("img/proyectoa4.jpg")
+	100% {background-image:  url("img/proyectob1.jpg")	
 }
 
 
