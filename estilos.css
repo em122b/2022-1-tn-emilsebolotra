@@ -116,7 +116,7 @@ footer {
 }
 #quiensoy {
     width: 100%;
-    height: 600px;
+    height: auto;
     margin: 150px 0PX 70px 0PX;
     background-color: #b57cf0;
     display: flex;
