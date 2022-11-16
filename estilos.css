@@ -367,6 +367,47 @@ h4{
 }
 
 
-/*----------------------MEDIA?-----------------------*/
+/*----------------------MEDIA-----------------------*/
 
+@media screen and (max-width:360px){
+	
+    body {
+        font-size: 1em;
+    }
+    nav ul{
+        flex-direction: column;
+        padding: 0px;
+    }
+    
+    .saludo, .artista-container{
+        display: none;
+    }
 
+    footer {
+        width: 100%;
+    }
+    .container, .form-container3 {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .form-container3 {
+        padding: 40px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .form-direccion {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container3 h1 {
+        font-size: 2em;
+        justify-content: center;
+    }
+
+    .controls, .controls3 {
+        width: 80%;
+    }
+}
