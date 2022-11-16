@@ -436,4 +436,20 @@ h4{
 	#botonera ul{
 		width: 100%;
 	}
+	.comentario{
+		display: none;
+	}
+	.botoncuenta{
+		width: 50%;
+	}
+	.contenedor3{
+		padding: 0px;
+	}
+	.articulo3{
+		padding-left: 10px;
+	}
+	#galeria{
+		width: 90%;
+		margin-left: 0px;
+	}
 }
