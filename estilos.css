@@ -208,11 +208,9 @@ h2{
 }
 		
 .flex-item {
-	width: 1200px;
 	height: auto;
     display: flex;
     flex-flow: wrap;
-    align-content: center;
 }
 		
 .habilidades {
@@ -250,7 +248,7 @@ h3{
 
 #contenedor2 {
     width: 100%;
-    height: 750px;    
+    height: 350px;    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -258,13 +256,13 @@ h3{
 }
 
 #galeria {
-    width: 70%;
+    width:30%;
     height: 60%;
     margin-left: 20px;
     background: no-repeat; 
     border: #f63c13 solid 10px;
     border-radius: 30px;
-    background-image: url("img/foto7.jpg");
+    background-image: url("img/foto1.jpg");
 	animation-name: fotos;
 	animation-duration: 27s;
 	animation-iteration-count:infinite;
