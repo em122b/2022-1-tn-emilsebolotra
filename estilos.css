@@ -73,6 +73,7 @@ footer {
 	box-sizing: border-box;
 }
 #redes-sociales{
+	display: flex;
 	margin-left: 50px;
 	padding: 0
 }
@@ -410,4 +411,29 @@ h4{
     .controls, .controls3 {
         width: 80%;
     }
+	#quiensoy{
+		flex-direction: column;
+	} 
+	h1{
+		font-size: 3m;
+		padding: 0px;
+	}
+	.articulo1 p{
+		font-size: 1m;
+	}
+	.centrados, .contenedor{
+		flex-direction: column;
+	}
+	.experiencia{
+		width: 80%;
+	}
+	.copyright{
+		width: 100%;
+	}
+	footer{
+		flex-direction: column;
+	}
+	#botonera ul{
+		width: 100%;
+	}
 }
