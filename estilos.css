@@ -415,11 +415,11 @@ h4{
 		flex-direction: column;
 	} 
 	h1{
-		font-size: 3m;
+		font-size: 3em;
 		padding: 0px;
 	}
 	.articulo1 p{
-		font-size: 1m;
+		font-size: 1em;
 	}
 	.centrados, .contenedor{
 		flex-direction: column;
