@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 /*font-family: 'Montserrat', "sans-serif" ,"Consolas" */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap');
 
 *{
 	margin: 0px;
@@ -20,10 +21,11 @@ body{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	
+	font-family: 'Montserrat', sans-serif;
+	color: black;
 }
 
-/*----------------------HEADER------------------------*/
+/*-HEADER-*/
 
 header {
     width: 100%;
@@ -37,6 +39,8 @@ header {
 header a {
     margin-left: 50px;
 }
+
+/*-NAV-*/
 #botonera ul {
     width: 500px;
     margin-right: 50px;
@@ -49,15 +53,41 @@ header a {
 }
 #botonera a {
     color: #f52d32;
-    font-family: "coolvetica";
-    font-weight: 400;
+    font-weight: 600;
     font-size: 18px;
 }
 #botonera a:hover{
 	font-size: 22px;
-	color: yellowgreen;
+	color: #8eed69;
 }
 
+/*-FOOTER-*/
+footer {
+    width: 100%;
+    height: 100px;
+    padding: 0px 50px 0px 50px;
+    background-color:#f63c13;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+	box-sizing: border-box;
+}
+#redes-sociales{
+	margin-left: 50px;
+	padding: 0
+}
+.redes{
+	padding: 20px 10px 20px 10px;
+}
+.copyright {
+    width: 638px;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: 400;
+}
+/*---------------------- MAIN YO------------------------*/
 .home {
     width: 100%;
     height: 580px;
@@ -66,6 +96,7 @@ header a {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+	margin-top: 60px;
 }
 .bienvenida {
     width: 80%;
@@ -79,14 +110,14 @@ header a {
     align-items: center;
 }
 .hola p {
-    font-family: "coolvetica";
+    font-weight:400;
     font-size: 40px;
     color: black;
 }
 #quiensoy {
     width: 100%;
     height: 600px;
-    margin: 80px 0 80px 0;
+    margin: 150px 0PX 70px 0PX;
     background-color: #b57cf0;
     display: flex;
     flex-direction: row;
@@ -101,41 +132,76 @@ header a {
 }
 .articulo1 {
     width: 40%;
-    margin-left: 120px;
+    height: 500px;
+    margin-left: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: monserrat;
 }
-
-.titulo1 {
-    color: white; 
-    font-size: 25px;
-    padding: 0 0 10px 0;
+h1{
+    color: white;
+    font-size: 70px;
+    padding: 20px 260px 50px 0px;
+    font-weight: 900;
 }
 .articulo1 p {
-    font-size: 17px;
-    color: white;
+    font-size: 25px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #EAE9E4;
+    padding: 0px 3px 0px 0px;
 }
 
-footer {
+/*-- EXPERIENCIA y  EDUCACION--*/
+
+h2{
     width: 100%;
-    height: 100px;
-    padding: 0px 50px 0px 50px;
-    background-color:#f63c13;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    font-size: 40px;
+    color: #b57cf0;
+}
+.contenedor{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-	box-sizing: border-box;
+    flex-wrap: nowrap;
+}
+.experiencia{
+	border: 2px solid #136284;
+	border-radius: 10px;
+	width: 500px;
+	height: 300px;
+	margin: 2%;
+	font-size: 1.25em;
+	padding: 10px;
+}
+.experiencia p {
+	font-size: 1em;
+}
+.tiempo{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+	font-weight: bold;
+}
+
+.destacados{
+	font-weight:700;
+}
+
+.experiencia span{
+	color: #136284;
+	font-weight: 500;
 }
 
 
-/*---------------------- habilidades------------------------*/
-
+/*---------------------- MAIN GALERIA------------------------*/
 
 .flex-container {
-	margin: 0 0 60px 0;
+	margin: 0px 0px 60px 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -158,34 +224,20 @@ footer {
 	transition-property: transform;
 	transition-duration: 0.5s;
 	transition-timing-function: ease-in-out;
-	filter: drop-shadow(0 0 5px #333333);
+	filter: drop-shadow(0 0 5px black);
 }
 	
 .habilidades:hover {
     transform: scale(1.15);
-	box-shadow: 0 0 5px #47CFE2, 0 0 20px #47CFE2, 0 0 40px #47CFE2;	
+	box-shadow: 0 0 5px #8eed69, 0 0 20px #8eed69, 0 0 40px #8eed69;	
 }
-
 
 .cardinfo {
-	position: absolute;
-	font-size: 14px;
-	color: #FFFFFF;
-	font-family: 'Poppins', sans-serif;
-	bottom: 2.5em;
-	left: 2em;
-	font-weight: 400
+	font-size: 18px;
+	font-weight:500;
 }
 
-
-.subtitulo {
-    margin: 70px 0 50px 150px;
-	font-family: "coolvetica";
-	font-size: 25px;
-	color: black;
-}
-
-#test {
+#contenedor2 {
     width: 100%;
     height: 750px;    
     display: flex;
@@ -216,39 +268,8 @@ footer {
 	100% {background-image: url("img/foto6.jpg")}
 }
 
-
-
-/*----------------------FOOTER------------------------*/
-footer{
-padding: 10px;
-color:black;
-background-color:#f63c13;
-
-}
-#redes-sociales{
-	margin-left: 50px;
-	padding: 0
-}
-
-.redes{
-	padding: 20px 10px 20px 10px;
-}
-
-.redes:hover{
-	color: #8eed69;
-}
-
-.copyright{
-	width: 500px;
-	display: flex;
-	flex-direction: row;
-	font-size: 13px;
-	font-family: "coolvetica";
-}
-
-/*----------------------MAIN CONTACTOS-----------------------*/
-
-.container {
+/*----------------------MAIN CONTACTO-----------------------*/
+.contenedor3{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -256,12 +277,10 @@ background-color:#f63c13;
     padding: 50px 138px 24px 138px;
     background-color: #b57cf0;
 }
-articulo1 {
+.articulo3{
     padding-left: 70px;
 }
-
 h4{
-    font-family: "coolvetica";
     font-weight: 700;
     font-size: 45px;
     line-height: 56px;
@@ -276,8 +295,7 @@ h4{
     align-items: flex-start;
 }
 .contactame{
-	font-family: "montserrat";
-    font-weight: 700;
+	font-weight: 700;
     font-size: 45px;
     line-height: 56px;
     color: #EAE9E4;
@@ -307,46 +325,39 @@ h4{
     height: 127px;
     padding: 10px;
     border-radius: 20px;
+	border:0;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     margin-bottom: 30px;
 }
-.clickea{
-font-weight: 600;
-font-size: 18px;
-line-height: 27px;
-color:#FFED07;
-text-decoration: underline;
-}
-.clickea:hover{
-	color:#EB5A08;
-}
 .botoncuenta {
     width: 40%;
     border-radius: 80px;
-    background-color: #0A9372;
+    background-color:#EAE9E4;
 }
 
 .botoncuenta a {
-    font-family: montserrat;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 20px;
     padding: 10px 26px 10px 26px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    color: #EAE9E4;
+    color: #f63c13;
 }
-
+.botoncuenta a:hover{
+    font-size:22px;
+	color:#8eed69;
+}
 .contactame {
-    font-family: "montserrat";
     font-weight: 600;
     font-size: 40px;
     color: #EAE9E4;
     padding-left: 80px;
 }
 
-.botoncuenta a:hover{
-    font-size:22px;
-}
+
+/*----------------------MEDIA?-----------------------*/
+
+
