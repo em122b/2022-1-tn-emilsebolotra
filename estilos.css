@@ -6,7 +6,7 @@
 *{
 	margin: 0px;
 	padding: 0px;
-	color: #EAEAEA;
+	color: black;
 	text-decoration: none;
 }
 
@@ -22,7 +22,6 @@ body{
 	display: flex;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
-	color: black;
 }
 
 /*-HEADER-*/
@@ -84,8 +83,9 @@ footer {
     width: 638px;
     display: flex;
     flex-direction: row;
-    font-size: 18px;
+    font-size: 10px;
     font-weight: 400;
+	color:#EAE9E4;
 }
 /*---------------------- MAIN YO------------------------*/
 .home {
@@ -153,14 +153,18 @@ h1{
 }
 
 /*-- EXPERIENCIA y  EDUCACION--*/
-
+.centrados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 h2{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 40px;
     color: #b57cf0;
 }
@@ -169,36 +173,30 @@ h2{
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.experiencia{
-	border: 2px solid #136284;
-	border-radius: 10px;
-	width: 500px;
-	height: 300px;
-	margin: 2%;
-	font-size: 1.25em;
-	padding: 10px;
+.experiencia {
+    border: 5px solid #b57cf0;
+    border-radius: 20px;
+    width: 330px;
+    height: 124px;
+    margin: 2%;
+    padding:10px 30px 30px 30px;
 }
-.experiencia p {
-	font-size: 1em;
-}
-.tiempo{
-	display: flex;
-	justify-content: space-between;
-	margin: 10px;
-	font-weight: bold;
+.destacados {
+    font-weight: 700;
+    font-size: 20px;
 }
 
-.destacados{
-	font-weight:700;
+.experiencia li{
+	font-size: 18px;
+	font-weight: 400;
 }
 
 .experiencia span{
-	color: #136284;
-	font-weight: 500;
+	color: #b57cf0;
+	font-weight: 600;
+	font-size:18px;
 }
-
-
-/*---------------------- MAIN GALERIA------------------------*/
+/*--SKILS--*/
 
 .flex-container {
 	margin: 0px 0px 60px 0px;
@@ -229,12 +227,25 @@ h2{
 	
 .habilidades:hover {
     transform: scale(1.15);
-	box-shadow: 0 0 5px #8eed69, 0 0 20px #8eed69, 0 0 40px #8eed69;	
 }
 
 .cardinfo {
 	font-size: 18px;
 	font-weight:500;
+}
+
+/*---------------------- MAIN GALERIA------------------------*/
+
+h3{
+    width: 100%;
+	margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+    font-size: 40px;
+    color:#f63c13;
 }
 
 #contenedor2 {
@@ -251,7 +262,7 @@ h2{
     height: 60%;
     margin-left: 20px;
     background: no-repeat; 
-    border: #f63c13 solid;
+    border: #f63c13 solid 10px;
     border-radius: 30px;
     background-image: url("img/foto7.jpg");
 	animation-name: fotos;
